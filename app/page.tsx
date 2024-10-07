@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
+import { FaMobileButton } from "react-icons/fa6";
 
 export default function Page() {
   return (
@@ -17,51 +18,36 @@ export default function Page() {
       </a>
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
+        About Me 
       </h1>
+      <p>
+        A mechanical engineer-turned tech writer!
+      </p>
+      <br></br>
 
       <div className="prose prose-neutral dark:prose-invert">
+        <h2>Publications</h2>
         <p>
           A clean, fast, and lightweight portfolio template built with Next.js,
           Vercel, and Tailwind CSS for optimal performance.
         </p>
+      </div>
+      <div className="prose prose-neutral dark:prose-invert">
+        <h2>Past Projects</h2>
         <p>
-          Nextfolio includes all the essentials for a stunning portfolio: SEO,
-          MDX support, RSS, Atom, & JSON feeds, analytics, tweet & YouTube
-          embeds, KaTeX integration, and{" "}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
+          Dolphin Flashcards
         </p>
         <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
+          SnapNames
         </p>
-        <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
-          </a>
-          .
-        </p>
+      </div>
+
+      <div className="CVButton">
+        <a href="">
+          <button type="button">
+            Download my CV
+          </button>
+        </a>
       </div>
     </section>
   );
