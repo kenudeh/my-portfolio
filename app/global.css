@@ -167,3 +167,28 @@ table {
   justify-content: center;
   align-items: center;
 }
+
+ul {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+
+.aboutme{
+ background-color: rgba(217, 216, 216, 0.19);
+ padding: 10px; 
+ border-radius: 10px;
+}
+
+.project{
+  border: 1px solid black;
+}
+
+.writings {
+  list-style-type: circle;
+  padding-left: 30px;
+}
+
+.content{
+  justify-content: left;
+}
+

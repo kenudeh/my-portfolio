@@ -5,7 +5,7 @@ import {
   FaXTwitter,
   FaGithub,
   FaRss,
-  FaLinkedinIn,
+  FaLinkedinIn
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "app/config";
@@ -44,7 +44,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {metaData.title}
+        {metaData.title} | ken_udeh@outlook.com 
       </a>
       <style jsx>{`
         @media screen and (max-width: 480px) {
