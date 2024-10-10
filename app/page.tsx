@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { socialLinks } from "./config";
-import { FaMobileButton } from "react-icons/fa6";
+import { socialLinks } from "./config"
 
 export default function Page() {
   return (
-    <section>
+    <section className="section">
       <a href={socialLinks.twitter} target="_blank">
         <Image
           src="/profile.png"
@@ -21,16 +20,22 @@ export default function Page() {
         About Me 
       </h1>
       <p>
-        A mechanical engineer-turned tech writer!
+        A mechanical engineer-turned tech writer. I excell at simplifying complex ideas for the right audience.  
       </p>
       <br></br>
 
       <div className="prose prose-neutral dark:prose-invert">
         <h2>Publications</h2>
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
+          Some of my writings:
         </p>
+        <p>
+          <a href="https://kenudeh.hashnode.dev/api-reference-overviews">API Reference Overviews</a><br></br>
+          <a href="https://kenudeh.hashnode.dev/setting-up-a-docs-site-with-mintlify">Setting Up a Docs Site with Mintlify</a><br></br>
+          <a href="https://kenudeh.hashnode.dev/an-overview-of-dependencies">An overview of Dependencies</a><br></br>
+          <a href="https://kenudeh.hashnode.dev/failed-to-start-the-docker-engine-error">Fix Docker Engine Startup Errors on Windows</a>
+        </p>
+        <p>Visit <a href="">my blog</a> for more...</p>
       </div>
       <div className="prose prose-neutral dark:prose-invert">
         <h2>Past Projects</h2>
@@ -41,10 +46,11 @@ export default function Page() {
           SnapNames
         </p>
       </div>
+      <br></br>
 
-      <div className="CVButton">
-        <a href="">
-          <button type="button">
+      <div className="buttonDiv">
+        <a href="https://drive.google.com/file/d/1zRh9g_2sHo7UC5B-OBW_D26CFoWEM6xj/view?usp=sharing" className="anchorTag" target="_blank">
+          <button type="button" className="CVButton">
             Download my CV
           </button>
         </a>

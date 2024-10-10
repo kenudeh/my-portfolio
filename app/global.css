@@ -149,3 +149,21 @@ table {
 .title {
   text-wrap: balance;
 }
+
+.CVButton {
+  color: #fefefe;
+  background-color: #3aa439;
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 10px;
+  height: 50px;
+
+}
+
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
