@@ -33,7 +33,7 @@ export default function Page() {
       <br></br>
 
       <div className="buttonDiv">
-        <a href="https://drive.google.com/file/d/1zRh9g_2sHo7UC5B-OBW_D26CFoWEM6xj/view?usp=sharing" className="anchorTag" target="_blank">
+        <a href="https://drive.google.com/file/d/1TneHBIcsk03iWsnVz_6i78-qJhVo9rtt/view?usp=sharing" className="anchorTag" target="_blank">
           <button type="button" className="CVButton">
             Download my CV
           </button>
