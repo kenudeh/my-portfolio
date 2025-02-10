@@ -17,16 +17,16 @@ export default function Page() {
       </a>
       <div className="aboutme">
         <h1 className="mb-8 text-2xl font-medium tracking-tight">
-          About Me 
+          <b className="header">About Me</b> 
         </h1>
         <div>
-        I am a technical writer based in southeast Nigeria. My passion is simplifying complex information for the right audience. 
-        With my fair understanding of programming concepts, I excel at:<br></br>
+        I am a Django developer and technical writer, based in southeast Nigeria. My passion is simplifying complex information for the right audience. 
+        With my understanding of programming concepts, I excel at:<br></br>
         <br></br>
         <ul>
-          <li>Writing clear and concise API and developer-focused documentation.</li><br></br>
-          <li>Strategizing and deciding the right tools and approach for publishing and maintaining documentation sites.</li><br></br>
-          <li>Creating impactful content by applying best practices in metadata and information architecture.</li>
+          <li>Writing clear and concise developer-focused documentation, including API references and conceptual contents</li><br></br>
+          <li>Strategizing and deciding the right tools and approach for publishing and maintaining documentation sites</li><br></br>
+          <li>Creating impactful content by applying best practices in metadata and information architecture</li>
         </ul>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function Page() {
       <br></br>
 
       <div className="prose prose-neutral dark:prose-invert">
-        <h2>Publications</h2>
+        <h2 className="header"><b>Publications</b></h2>
         <p>
           Have a look at some of my musings:
         </p>
@@ -58,49 +58,84 @@ export default function Page() {
         
       </div>
       <div className="prose prose-neutral dark:prose-invert">
-        <h2>Past Projects</h2>
-        <p>
-          <b>Dolphin Flashcards</b>
-        </p>
-        <a href="http://docs.dolphinflashcards.com" target="_blank">
-          <Image
-            src="/dolphin.png"
-            alt="Dolphin Flashcard App"
-            unoptimized
-            width={560}
-            height={360}
-            className="project"
-          />
-        </a>
-        <p>
-          I designed and implemented the entire information architecture for the Dolphin Flashcards application. 
-          Leveraging MDX components, I authored conceptual topics to help users become familiar with the product. 
-          Additionally, I created an OpenAPI specification file, from which I generated the API reference through Mintlify.
-        </p>
-        
-        <br></br>
-        <div>
-          <p>
-            <b>SnapNames</b>
-          </p>
-          <a href="https://curious-druid-05e915.netlify.app" target="_blank">
-          <Image
-            src="/snapnames.png"
-            alt="Dolphin Flashcard App"
-            unoptimized
-            width={560}
-            height={360}
-            className="project"
-          />
-        </a>
-        <p className="content">
-          For this sample project, I created a detailed user guide for Snapnames, a domain name back-ordering service. 
-          I used MKDocs, a static site generator, to build the documentation site from Markdown files.  
-        </p>
-        </div>
-        
+        <h2 className="header"><b>Past Projects</b></h2>
+          <div className="Docs">
+            {/*<h3 className="doc-header"><b>Documentation</b></h3>*/}
+            {/*
+            <div className="Convert">
+                <p>
+                  <b>Convert</b>
+                </p>
+                <a href="http://docs.convert.com.ng" target="_blank">
+                  <Image
+                    src="/dolphin.png"
+                    alt="Convert App"
+                    unoptimized
+                    width={560}
+                    height={360}
+                    className="project"
+                  />
+                </a>
+                <p>
+                I  I created engaging onboarding content that introduces users to the application's core features and <br></br>
+                I also wrote internal API reference content, which helped the frontend team get familiar with the available endpoints, and the paramaters needed to interact with each endpoint and what to expect from each in return.
+
+                </p>
+            </div>
+            */}
+            <div className="Dolphin">
+                <p>
+                  <b>Dolphin Flashcards</b>
+                </p>
+                <a href="http://docs.dolphinflashcards.com" target="_blank">
+                  <Image
+                    src="/dolphin.png"
+                    alt="Dolphin Flashcard App"
+                    unoptimized
+                    width={560}
+                    height={360}
+                    className="project"
+                  />
+                </a>
+                <p>
+                I designed and implemented the information architecture for the Dolphin Flashcards application, a gamified flashcard tool. Using MDX components, I created engaging onboarding content that introduces users to the application's core features and provides a quick start guide for contributors.
+                <br></br>
+                <br></br>
+                I also wrote an OpenAPI specification file for the app's API, from which I generated comprehensive and interactive reference documentation using Mintlify. This effort enhanced the developer experience and helped maintain consistency throughout the documentation.
+                </p>
+            </div>
+                <br></br>
+            
+            <div className="Snapnames">
+              <p>
+                <b>SnapNames</b>
+              </p>
+              <a href="https://curious-druid-05e915.netlify.app" target="_blank">
+              <Image
+                src="/snapnames.png"
+                alt="Dolphin Flashcard App"
+                unoptimized
+                width={560}
+                height={360}
+                className="project"
+              />
+              </a>
+              <p className="content">
+                For this sample project, I created a detailed user guide for Snapnames, a domain name back-ordering service. 
+                I used MKDocs, a static site generator, to build the documentation site from Markdown files.  
+              </p>
+            </div>
+          </div>
+{/* 
+          <div className="API">
+            <h3><b>APIs</b></h3>
+            <p><b>Convert</b></p>
+            <p>The Convert API was designed using Django Rest Framework(DRF). </p>
+          </div>
+*/}
       </div>
       <br></br>
+
 
       
     </section>
