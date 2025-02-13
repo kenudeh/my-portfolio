@@ -60,15 +60,15 @@ export default function Page() {
       <div className="prose prose-neutral dark:prose-invert">
         <h2 className="header"><b>Past Projects</b></h2>
           <div className="Docs">
-            {/*<h3 className="doc-header"><b>Documentation</b></h3>*/}
-            {/*
+            <h3 className="doc-header"><b>Documentation</b></h3>
+         
             <div className="Convert">
-                <p>
-                  <b>Convert</b>
-                </p>
-                <a href="http://docs.convert.com.ng" target="_blank">
+                <a href="https://docs.convert.com.ng" target="_blank">
+                  <p><b>Convert</b></p>
+                </a>
+                <a href="https://docs.convert.com.ng" target="_blank">
                   <Image
-                    src="/dolphin.png"
+                    src="/convert.png"
                     alt="Convert App"
                     unoptimized
                     width={560}
@@ -77,16 +77,19 @@ export default function Page() {
                   />
                 </a>
                 <p>
-                I  I created engaging onboarding content that introduces users to the application's core features and <br></br>
-                I also wrote internal API reference content, which helped the frontend team get familiar with the available endpoints, and the paramaters needed to interact with each endpoint and what to expect from each in return.
+                Convert is an online airtime-to-cash conversion platform. For this project, I worked on improving user experience and developer efficiency through documentation. I created user guides that simplified the onboarding process, making it easier for users to understand and utilize the platform's core features. 
+                <br></br>
 
+                <br></br>
+                Furthermore, I developed an internal OpenAPI-compliant API documentation, which directly facilitated faster and more seamless integration by the frontend team. This documentation contributed to a more streamlined development cycle and an improved user experience.
                 </p>
             </div>
-            */}
+            <br></br>
+        
             <div className="Dolphin">
-                <p>
-                  <b>Dolphin Flashcards</b>
-                </p>
+                <a href="http://docs.dolphinflashcards.com" target="_blank">
+                   <p><b>Dolphin Flashcards</b></p>
+                </a>
                 <a href="http://docs.dolphinflashcards.com" target="_blank">
                   <Image
                     src="/dolphin.png"
@@ -98,7 +101,7 @@ export default function Page() {
                   />
                 </a>
                 <p>
-                I designed and implemented the information architecture for the Dolphin Flashcards application, a gamified flashcard tool. Using MDX components, I created engaging onboarding content that introduces users to the application's core features and provides a quick start guide for contributors.
+                I designed and implemented the information architecture for the Dolphin Flashcards' documentation site. Using MDX components, I created engaging onboarding contents that introduces users to the application's capabilities, and provides a quick start guide for contributors.
                 <br></br>
                 <br></br>
                 I also wrote an OpenAPI specification file for the app's API, from which I generated comprehensive and interactive reference documentation using Mintlify. This effort enhanced the developer experience and helped maintain consistency throughout the documentation.
@@ -108,7 +111,7 @@ export default function Page() {
             
             <div className="Snapnames">
               <p>
-                <b>SnapNames</b>
+                <b><a href="https://curious-druid-05e915.netlify.app" target="_blank"><b>SnapNames</b></a></b>
               </p>
               <a href="https://curious-druid-05e915.netlify.app" target="_blank">
               <Image
@@ -122,17 +125,20 @@ export default function Page() {
               </a>
               <p className="content">
                 For this sample project, I created a detailed user guide for Snapnames, a domain name back-ordering service. 
-                I used MKDocs, a static site generator, to build the documentation site from Markdown files.  
+                I used the static site generator, MKDocs, to build the documentation site from Markdown files.  
               </p>
             </div>
           </div>
-{/* 
+          <br></br>
+
           <div className="API">
             <h3><b>APIs</b></h3>
-            <p><b>Convert</b></p>
-            <p>The Convert API was designed using Django Rest Framework(DRF). </p>
+            <p><b><a href="https://convert.com.ng" target="_blank">Convert API</a></b></p>
+            <p>
+              Designed and implemented the API for "Convert," an airtime-to-cash conversion platform.  Built with Django and Django REST Framework (DRF), this API powers the app's key features, including airtime sales order creation, balance retrieval, cash withdrawal requests, cash deposits, and transaction logging, using an SQL database for persistent data storage. JWT authentication was implemented to secure API endpoints.
+            </p>
           </div>
-*/}
+
       </div>
       <br></br>
 
