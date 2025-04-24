@@ -1,7 +1,12 @@
+'use client'
 import Image from "next/image";
 import { socialLinks } from "./config"
+import { useState } from "react";
 
 export default function Page() {
+
+  const [activeTab, setActiveTab] = useState<'docs' | 'api'>('docs')
+
   return (
     <section className="section">
       <a href={socialLinks.twitter} target="_blank">
@@ -20,11 +25,11 @@ export default function Page() {
           <b className="header">About Me</b> 
         </h1>
         <div>
-        I am a Django developer and technical writer, based in southeast Nigeria. My passion is simplifying complex information for the right audience. 
+        I am a technical writer and Django developer based in Lagos, Nigeria. My passion is simplifying complex information for the right audience. 
         With my understanding of programming concepts, I excel at:<br></br>
         <br></br>
         <ul>
-          <li>Writing clear and concise developer-focused documentation, including API references and conceptual contents</li><br></br>
+          <li>Writing clear and concise developer-focused documentation</li><br></br>
           <li>Strategizing and deciding the right tools and approach for publishing and maintaining documentation sites</li><br></br>
           <li>Creating impactful content by applying best practices in metadata and information architecture</li>
         </ul>
@@ -57,90 +62,149 @@ export default function Page() {
         <p>For more of my writing samples, check out <a href="https://kenudeh.hashnode.dev/" target="_blank">my blog.</a></p><br></br>
         
       </div>
+
+
       <div className="prose prose-neutral dark:prose-invert">
         <h2 className="header"><b>Past Projects</b></h2>
-          <div className="Docs">
-            <h3 className="doc-header"><b>Documentation</b></h3>
-         
-            <div className="Convert">
-                <a href="https://docs.convert.com.ng" target="_blank">
-                  <p><b>Convert</b></p>
-                </a>
-                <a href="https://docs.convert.com.ng" target="_blank">
-                  <Image
-                    src="/convert.png"
-                    alt="Convert App"
-                    unoptimized
-                    width={560}
-                    height={360}
-                    className="project"
-                  />
-                </a>
-                <p>
-                Convert is an online airtime-to-cash conversion platform. For this project, I worked on improving user experience and developer efficiency through documentation. I created user guides that simplified the onboarding process, making it easier for users to understand and utilize the platform's core features. 
-                <br></br>
 
-                <br></br>
-                Furthermore, I developed an internal OpenAPI-compliant API documentation, which directly facilitated faster and more seamless integration by the frontend team. This documentation contributed to a more streamlined development cycle and an improved user experience.
-                </p>
-            </div>
-            <br></br>
-        
-            <div className="Dolphin">
-                <a href="http://docs.dolphinflashcards.com" target="_blank">
-                   <p><b>Dolphin Flashcards</b></p>
-                </a>
-                <a href="http://docs.dolphinflashcards.com" target="_blank">
-                  <Image
-                    src="/dolphin.png"
-                    alt="Dolphin Flashcard App"
-                    unoptimized
-                    width={560}
-                    height={360}
-                    className="project"
-                  />
-                </a>
-                <p>
-                I designed and implemented the information architecture for the Dolphin Flashcards' documentation site. Using MDX components, I created engaging onboarding contents that introduces users to the application's capabilities, and provides a quick start guide for contributors.
-                <br></br>
-                <br></br>
-                I also wrote an OpenAPI specification file for the app's API, from which I generated comprehensive and interactive reference documentation using Mintlify. This effort enhanced the developer experience and helped maintain consistency throughout the documentation.
-                </p>
-            </div>
-                <br></br>
-            
-            <div className="Snapnames">
+        {/* Tabs */}
+        <div className="flex gap-4 mb-4">
+          <button
+            className={`px-4 py-2 border rounded ${activeTab === 'docs' ? 'bg-gray-200 dark:bg-gray-700' : ''}`}
+            onClick={() => setActiveTab('docs')}
+          >
+            Documentation
+          </button>
+          <button
+            className={`px-4 py-2 border rounded ${activeTab === 'api' ? 'bg-gray-200 dark:bg-gray-700' : ''}`}
+            onClick={() => setActiveTab('api')}
+          >
+            APIs
+          </button>
+        </div>
+
+        {/* Documentation Tab */}
+        {activeTab === 'docs' && (
+          <div className="Docs space-y-12">
+            {/* Ai Tracker */}
+            <div className="Convert">
+              <a href="https://www.aitracker.io/help" target="_blank">
+                <p><b>AI Tracker</b></p>
+              </a>
+              <a href="https://www.aitracker.io/help" target="_blank">
+                <Image
+                  src="/aitracker_docs.png"
+                  alt="AI Tracker"
+                  unoptimized
+                  width={560}
+                  height={360}
+                  className="project"
+                />
+              </a>
               <p>
-                <b><a href="https://curious-druid-05e915.netlify.app" target="_blank"><b>SnapNames</b></a></b>
+              
               </p>
+
+              <p>
+                AI Tracker is a directory of AI developer tools. I authored the help center content, which covered the features of the directory and how things works, how to submit a new tool, and how to update a tool listing.
+                <br /><br />
+
+                I also wrote an internal Swagger (OpenAPI) file for the API endpoints, which allowed the frontend team access to proper API documentation for easier integration.
+                <br /><br />
+
+                <span className="text-[#0e8d7d] font-medium">
+                  Tools & Technologies:</span> HTML, OpenAPI
+              </p>
+            </div>
+
+            {/* Convert */}
+            <div className="Convert">
+              <a href="https://docs.convert.com.ng" target="_blank">
+                <p className="text-[#0e8d7d] font-semibold text-lg">Convert</p>
+              </a>
+              <a href="https://docs.convert.com.ng" target="_blank">
+                <Image
+                  src="/convert.png"
+                  alt="Convert App"
+                  unoptimized
+                  width={560}
+                  height={360}
+                  className="project"
+                />
+              </a>
+              <p>
+                In this project, I worked on improving user experience and developer efficiency through documentation. I created user guides that simplifies the onboarding process, making it easier for users to understand and use the platform's core features.
+                <br /><br />
+                Furthermore, I wrote internal documentation, which the frontend team relies on as they work towards the product's launching.
+                <br /><br />
+                <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> OpenAPI, Markdown, Mintlify
+              </p>
+            </div>
+
+
+            {/* Dolphin Flashcards */}
+            <div className="Dolphin">
+              <a href="http://docs.dolphinflashcards.com" target="_blank">
+                <p className="text-[#0e8d7d] font-semibold text-lg">Dolphin Flashcards</p>
+              </a>
+              <a href="http://docs.dolphinflashcards.com" target="_blank">
+                <Image
+                  src="/dolphin.png"
+                  alt="Dolphin Flashcard App"
+                  unoptimized
+                  width={560}
+                  height={360}
+                  className="project"
+                />
+              </a>
+              <p>
+                I designed and implemented the information architecture for the Dolphin Flashcards' documentation platform. Being an OpenSource project, I created onboarding contents for future contributors to the project and also setup the API reference section for a wholistic view of the availaible endpoints.
+                <br /><br />
+
+                <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> Mintlify, OpenAPI, MDX
+              </p>
+            </div>
+
+
+            {/* Snapnames */}
+            <div className="Snapnames">
               <a href="https://curious-druid-05e915.netlify.app" target="_blank">
-              <Image
-                src="/snapnames.png"
-                alt="Dolphin Flashcard App"
-                unoptimized
-                width={560}
-                height={360}
-                className="project"
-              />
+                <p className="text-[#0e8d7d] font-semibold text-lg">SnapNames</p>
+              </a>
+              <a href="https://curious-druid-05e915.netlify.app" target="_blank">
+                <Image
+                  src="/snapnames.png"
+                  alt="SnapNames App"
+                  unoptimized
+                  width={560}
+                  height={360}
+                  className="project"
+                />
               </a>
               <p className="content">
-                For this sample project, I created a detailed user guide for Snapnames, a domain name back-ordering service. 
-                I used the static site generator, MKDocs, to build the documentation site from Markdown files.  
+                For this sample project, I created a detailed user guide for SnapNames - a domain name back-ordering service - using the static site generator, MKDocs.
+                <br /><br />
+                <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> MKDocs, Markdown
               </p>
             </div>
-          </div>
-          <br></br>
 
+
+          </div>
+        )}
+
+        {/* API Tab */}
+        {activeTab === 'api' && (
           <div className="API">
-            <h3><b>APIs</b></h3>
-            <p><b><a href="https://convert.com.ng" target="_blank">Convert API</a></b></p>
+            <h3 className="text-[#0e8d7d] font-semibold text-lg">Convert API</h3>
             <p>
-              Designed and implemented the API for "Convert," an airtime-to-cash conversion platform.  Built with Django and Django REST Framework (DRF), this API powers the app's key features, including airtime sales order creation, balance retrieval, cash withdrawal requests, cash deposits, and transaction logging, using an SQL database for persistent data storage. JWT authentication was implemented to secure API endpoints.
+              I designed and implemented the API for this airtime-to-cash conversion platform. Built with Django and Django REST Framework (DRF), this API powers the app's key features, including airtime sales order creation, balance retrieval, cash withdrawal requests, cash deposits, and transaction logging. I used an SQL database for persistent data storage and JWT authentication for securing API endpoints.
+              <br /><br />
+              <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> Django, Django REST Framework, MySQL, JWT
             </p>
           </div>
-
-      </div>
-      <br></br>
+        )}
+    </div>
+   
 
 
       
