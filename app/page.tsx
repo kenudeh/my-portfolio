@@ -25,14 +25,26 @@ export default function Page() {
           <b className="header">About Me</b> 
         </h1>
         <div>
-        I am a technical writer and Django developer based in Lagos, Nigeria. My passion is simplifying complex information for the right audience. 
-        With my understanding of programming concepts, I excel at:<br></br>
+          <p>A technical writer with a developer’s mindset—I bridge the gap between how things work and how people need to use them.
+          </p>
+          <br></br>
+          <p>
+          Refined through documenting open-source projects, maintaining a tech blog, and creating docs for personal tools, I specialize in:
+          </p>
+
         <br></br>
         <ul>
-          <li>Writing clear and concise developer-focused documentation</li><br></br>
-          <li>Strategizing and deciding the right tools and approach for publishing and maintaining documentation sites</li><br></br>
-          <li>Creating impactful content by applying best practices in metadata and information architecture</li>
+          <li>Designing maintainable docs with modern workflows (Git, CI/CD, Static site generators)
+          </li>
+          <br></br>
+          <li>Writing public docs that drive adoption (tutorials, integration guides, FAQs)
+          </li>
+          <br></br>
+          <li>Crafting interactive API docs with executable examples
+          </li>
         </ul>
+        <br /> <b />
+        <p>I believe great docs don’t just explain—they convert readers into productive users.</p>
         </div>
       </div>
       <br></br>
