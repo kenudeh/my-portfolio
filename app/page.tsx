@@ -29,7 +29,7 @@ export default function Page() {
           </p>
           <br></br>
           <p>
-          Refined through documenting open-source projects, maintaining a tech blog, and creating docs for personal tools, I specialize in:
+          Refined through documenting open-source projects, maintaining a tech blog, and creating docs for live products, I specialize in:
           </p>
 
         <br></br>
