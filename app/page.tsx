@@ -106,7 +106,7 @@ export default function Page() {
               </p>
 
               <p>
-                AI Tracker is a directory of AI developer tools. I authored the help center content, which covered the features of the directory and how things works, how to submit a new tool, and how to update a tool listing.
+              AI Tracker is a directory of AI developer tools. I authored the help center content, which covered the directory's features and how things work, how to submit a new tool, and how to update a tool listing.
                 <br /><br />
 
                 I also wrote an internal Swagger (OpenAPI) file for the API endpoints, which allowed the frontend team access to proper API documentation for easier integration.
