@@ -39,9 +39,9 @@ export default function Page() {
 
       <div className="buttonDiv">
         <a href="https://drive.google.com/file/d/1TneHBIcsk03iWsnVz_6i78-qJhVo9rtt/view?usp=sharing" className="anchorTag" target="_blank">
-          <button type="button" className="CVButton">
+          {/* <button type="button" className="CVButton">
             Download my CV
-          </button>
+          </button> */}
         </a>
       </div>
       <br></br>
