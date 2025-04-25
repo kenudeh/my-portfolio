@@ -44,18 +44,11 @@ export default function Page() {
           </li>
         </ul>
         <br /> <b />
-        <p>I believe great docs don’t just explain—they convert readers into productive users.</p>
+        <p>I believe great docs don’t just explain—they convert readers into active users.</p>
         </div>
       </div>
       <br></br>
 
-      <div className="buttonDiv">
-        <a href="https://drive.google.com/file/d/1TneHBIcsk03iWsnVz_6i78-qJhVo9rtt/view?usp=sharing" className="anchorTag" target="_blank">
-          {/* <button type="button" className="CVButton">
-            Download my CV
-          </button> */}
-        </a>
-      </div>
       <br></br>
 
       <div className="prose prose-neutral dark:prose-invert">
@@ -215,6 +208,18 @@ export default function Page() {
             </p>
           </div>
         )}
+
+      <br></br>
+
+      <br></br>
+
+      <div className="buttonDiv">
+        <a href="https://drive.google.com/file/d/1u-Pr1PKjb6dDrt9CTeiJi1famEkVnpQt/view?usp=sharing" className="anchorTag" target="_blank">
+          <button type="button" className="CVButton">
+            Download my CV
+          </button> 
+        </a>
+      </div>
     </div>
    
 
