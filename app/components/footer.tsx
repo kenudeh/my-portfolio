@@ -38,14 +38,14 @@ export default function Footer() {
   return (
     <small className="block lg:mt-24 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
       <time>© {YEAR}</time>{" "}
-      <a
+      {/* <a
         className="no-underline"
         href={socialLinks.twitter}
         target="_blank"
         rel="noopener noreferrer"
-      >
+      > */}
         {metaData.title} | ken_udeh@outlook.com 
-      </a>
+      {/* </a> */}
       <style jsx>{`
         @media screen and (max-width: 480px) {
           article {
