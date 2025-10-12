@@ -192,8 +192,8 @@ export default function Page() {
           
             <div className="Snapnames">
              
-              <p style={{"color":"red", fontSize:"22px"}}>
-                My site is under reconstruction. Please, check back later.
+              <p style={{"color":"red", fontSize:"20px"}}>
+                My site is under reconstruction. Please, check back later for more details about my work.
                 <br /><br />
               </p>
             </div>
