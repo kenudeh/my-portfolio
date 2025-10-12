@@ -51,7 +51,7 @@ export default function Page() {
 
       <br></br>
 
-      <div className="prose prose-neutral dark:prose-invert">
+      {/* <div className="prose prose-neutral dark:prose-invert">
         <h2 className="header"><b>Publications</b></h2>
         <p>
           Have a look at some of my musings:
@@ -66,14 +66,14 @@ export default function Page() {
         </div>
         <p>For more of my writing samples, check out <a href="https://kenudeh.hashnode.dev/" target="_blank">my blog.</a></p><br></br>
         
-      </div>
+      </div> */}
 
 
       <div className="prose prose-neutral dark:prose-invert">
-        <h2 className="header"><b>Past Projects</b></h2>
+        {/* <h2 className="header"><b>Past Projects</b></h2> */}
 
         {/* Tabs */}
-        <div className="flex gap-4 mb-4">
+        {/* <div className="flex gap-4 mb-4">
           <button
             className={`px-4 py-2 border rounded ${activeTab === 'docs' ? 'bg-gray-200 dark:bg-gray-700' : ''}`}
             onClick={() => setActiveTab('docs')}
@@ -86,13 +86,13 @@ export default function Page() {
           >
             APIs
           </button>
-        </div>
+        </div> */}
 
         {/* Documentation Tab */}
         {activeTab === 'docs' && (
           <div className="Docs space-y-12">
-            {/* Ai Tracker */}
-            <div className="Convert">
+
+            {/* <div className="Convert">
               <a href="https://www.aitracker.io/help" target="_blank">
                 <p><b>AI Tracker</b></p>
               </a>
@@ -120,9 +120,8 @@ export default function Page() {
                 <span className="text-[#0e8d7d] font-medium">
                   Tools & Technologies:</span> HTML, OpenAPI
               </p>
-            </div>
-
-            {/* Convert */}
+            </div> */}
+{/* 
             <div className="Convert">
               <a href="https://docs.convert.com.ng" target="_blank">
                 <p className="text-[#0e8d7d] font-semibold text-lg">Convert</p>
@@ -144,11 +143,10 @@ export default function Page() {
                 <br /><br />
                 <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> OpenAPI, Markdown, Mintlify
               </p>
-            </div>
+            </div> */}
 
 
-            {/* Dolphin Flashcards */}
-            <div className="Dolphin">
+            {/* <div className="Dolphin">
               <a href="http://docs.dolphinflashcards.com" target="_blank">
                 <p className="text-[#0e8d7d] font-semibold text-lg">Dolphin Flashcards</p>
               </a>
@@ -168,10 +166,9 @@ export default function Page() {
 
                 <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> Mintlify, OpenAPI, MDX
               </p>
-            </div>
+            </div> */}
 
-
-            {/* Snapnames */}
+{/*           
             <div className="Snapnames">
               <a href="https://curious-druid-05e915.netlify.app" target="_blank">
                 <p className="text-[#0e8d7d] font-semibold text-lg">SnapNames</p>
@@ -191,6 +188,14 @@ export default function Page() {
                 <br /><br />
                 <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> MKDocs, Markdown
               </p>
+            </div> */}
+          
+            <div className="Snapnames">
+             
+              <p style={{"color":"red", fontSize:"22px"}}>
+                My site is under reconstruction. Please, check back later.
+                <br /><br />
+              </p>
             </div>
 
 
@@ -198,7 +203,7 @@ export default function Page() {
         )}
 
         {/* API Tab */}
-        {activeTab === 'api' && (
+        {/* {activeTab === 'api' && (
           <div className="API">
             <h3 className="text-[#0e8d7d] font-semibold text-lg">Convert API</h3>
             <p>
@@ -207,19 +212,19 @@ export default function Page() {
               <span className="text-[#0e8d7d] font-medium">Tools & Technologies:</span> Django, Django REST Framework, MySQL, JWT
             </p>
           </div>
-        )}
+        )} */}
 
       <br></br>
 
       <br></br>
-
+{/* 
       <div className="buttonDiv">
         <a href="https://drive.google.com/file/d/1u-Pr1PKjb6dDrt9CTeiJi1famEkVnpQt/view?usp=sharing" className="anchorTag" target="_blank">
           <button type="button" className="CVButton">
             Download my CV
           </button> 
         </a>
-      </div>
+      </div> */}
     </div>
    
 
